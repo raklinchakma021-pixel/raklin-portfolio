@@ -4,6 +4,12 @@ import Navbar from "@/components/NavBar";
 import Banner from "@/components/Banner";
 import AboutMe from "@/components/About";
 import TechStacks from "@/components/TechStacks";
+import SkillsSection from "@/components/Skills";
+import QualificationSection from "@/components/Quality";
+import ProjectsSection from "@/components/Projects";
+import ContactSection from "@/components/Contact";
+import Footer from "@/components/Footer";
+import SmoothScroll from "@/components/SmoothScroll";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,11 +33,20 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <Navbar/>
+        <SmoothScroll >
+<Navbar/>
         <Banner/>
         <AboutMe/>
         <TechStacks/>
-        {children}</body>
+        <SkillsSection/>
+        <QualificationSection/>
+        <ProjectsSection/>
+        <ContactSection/>
+        <Footer/>
+        {children}
+
+        </SmoothScroll>
+        </body>
     </html>
   );
 }

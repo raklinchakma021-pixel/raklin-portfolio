@@ -1,34 +1,45 @@
-import Image from "next/image";
+import {
+  RiNextjsFill,
+  RiReactjsLine,
+  RiTailwindCssFill,
+  RiGithubFill,
+} from "react-icons/ri";
+
+import {
+  SiMongodb,
+  SiExpress,
+  SiTypescript,
+} from "react-icons/si";
 
 export default function TechStacks() {
   const technologies = [
     {
       name: "Next.js",
-      logo: "https://cdn.simpleicons.org/nextdotjs",
+      icon: <RiNextjsFill className="h-16 w-16" />,
     },
     {
       name: "React",
-      logo: "https://cdn.simpleicons.org/react",
+      icon: <RiReactjsLine className="h-16 w-16 text-sky-500" />,
     },
     {
       name: "Tailwind CSS",
-      logo: "https://cdn.simpleicons.org/tailwindcss",
+      icon: <RiTailwindCssFill className="h-16 w-16 text-cyan-400" />,
     },
     {
       name: "MongoDB",
-      logo: "https://cdn.simpleicons.org/mongodb",
+      icon: <SiMongodb className="h-16 w-16 text-green-500" />,
     },
     {
       name: "Express.js",
-      logo: "https://cdn.simpleicons.org/express",
+      icon: <SiExpress className="h-16 w-16" />,
     },
     {
       name: "TypeScript",
-      logo: "https://cdn.simpleicons.org/typescript",
+      icon: <SiTypescript className="h-16 w-16 text-blue-500" />,
     },
     {
       name: "GitHub",
-      logo: "https://cdn.simpleicons.org/github",
+      icon: <RiGithubFill className="h-16 w-16" />,
     },
   ];
 
@@ -39,6 +50,7 @@ export default function TechStacks() {
     >
       {/* Background Blur */}
       <div className="absolute left-[-100px] top-10 h-72 w-72 rounded-full bg-violet-500/20 blur-3xl"></div>
+
       <div className="absolute right-[-100px] bottom-0 h-72 w-72 rounded-full bg-cyan-500/20 blur-3xl"></div>
 
       <div className="mx-auto max-w-7xl">
@@ -66,13 +78,9 @@ export default function TechStacks() {
               key={index}
               className="group flex h-32 items-center justify-center rounded-3xl border border-gray-200 bg-white/70 shadow-lg backdrop-blur-xl transition-all duration-300 hover:-translate-y-2 hover:border-violet-500/40 dark:border-white/10 dark:bg-white/5"
             >
-              <Image
-                src={tech.logo}
-                alt={tech.name}
-                width={70}
-                height={70}
-                className="transition-transform duration-300 group-hover:scale-110"
-              />
+              <div className="transition-transform duration-300 group-hover:scale-110 text-black dark:text-white">
+                {tech.icon}
+              </div>
             </div>
           ))}
         </div>
