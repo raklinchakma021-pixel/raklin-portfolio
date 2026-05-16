@@ -61,7 +61,7 @@ export default function Footer() {
         <div className="flex items-center gap-4">
           
           <Link
-            href="https://github.com/your-github"
+            href="https://github.com/raklinchakma021-pixel"
             target="_blank"
             className="rounded-full border border-gray-300 p-3 text-gray-700 transition hover:border-violet-500 hover:text-violet-500 dark:border-white/10 dark:text-gray-300"
           >
@@ -69,7 +69,7 @@ export default function Footer() {
           </Link>
 
           <Link
-            href="https://linkedin.com/in/your-linkedin"
+            href="https://www.linkedin.com/in/raklin-chakma/"
             target="_blank"
             className="rounded-full border border-gray-300 p-3 text-gray-700 transition hover:border-violet-500 hover:text-violet-500 dark:border-white/10 dark:text-gray-300"
           >
@@ -77,7 +77,7 @@ export default function Footer() {
           </Link>
 
           <Link
-            href="mailto:yourgmail@gmail.com"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=raklinchakma021@gmail.com"
             className="rounded-full border border-gray-300 p-3 text-gray-700 transition hover:border-violet-500 hover:text-violet-500 dark:border-white/10 dark:text-gray-300"
           >
             <Mail className="h-5 w-5" />

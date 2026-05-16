@@ -64,7 +64,7 @@ export default function Banner() {
           {/* Description */}
           <p className="mt-6 max-w-xl text-base leading-relaxed text-gray-600 dark:text-gray-400 sm:text-lg">
             I create modern, responsive, and user-friendly websites with
-            beautiful UI/UX experiences using Next.js, React, and Tailwind CSS.
+            beautiful UI/UX experiences using Next.js ,Typescript, MongoDB, BetterAuth, React, and Tailwind CSS.
           </p>
 
           {/* Buttons */}

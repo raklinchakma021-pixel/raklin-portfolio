@@ -40,7 +40,7 @@ export default function ContactSection() {
           
           {/* Gmail */}
           <Link
-            href="mailto:yourgmail@gmail.com"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=raklinchakma021@gmail.com"
             className="group rounded-3xl border border-gray-200 bg-white/70 p-8 shadow-xl backdrop-blur-xl transition-all duration-300 hover:-translate-y-2 hover:border-violet-500/40 dark:border-white/10 dark:bg-white/5"
           >
             <div className="mb-6 inline-flex rounded-2xl bg-red-500/10 p-4 text-red-500">
@@ -52,7 +52,7 @@ export default function ContactSection() {
             </h3>
 
             <p className="mt-3 text-sm text-gray-600 dark:text-gray-400">
-              yourgmail@gmail.com
+              raklinchakma021@gmail.com
             </p>
 
             <div className="mt-6 inline-flex items-center text-sm font-semibold text-violet-500">
@@ -63,7 +63,7 @@ export default function ContactSection() {
 
           {/* LinkedIn */}
           <Link
-            href="https://linkedin.com/in/your-linkedin"
+            href="https://www.linkedin.com/in/raklin-chakma/"
             target="_blank"
             className="group rounded-3xl border border-gray-200 bg-white/70 p-8 shadow-xl backdrop-blur-xl transition-all duration-300 hover:-translate-y-2 hover:border-violet-500/40 dark:border-white/10 dark:bg-white/5"
           >
@@ -87,7 +87,7 @@ export default function ContactSection() {
 
           {/* WhatsApp */}
           <Link
-            href="https://wa.me/8801XXXXXXXXX"
+            href="https://wa.me/8801609981948"
             target="_blank"
             className="group rounded-3xl border border-gray-200 bg-white/70 p-8 shadow-xl backdrop-blur-xl transition-all duration-300 hover:-translate-y-2 hover:border-violet-500/40 dark:border-white/10 dark:bg-white/5"
           >

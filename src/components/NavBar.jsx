@@ -83,10 +83,11 @@ export default function Navbar() {
 
           {/* Hire Me Button */}
           <Link
-            href="#contact"
+            href="https://www.linkedin.com/in/raklin-chakma/"
+            target="_blank"
             className="hidden rounded-full bg-violet-600 px-5 py-2 text-sm font-semibold text-white transition hover:bg-violet-700 md:block"
           >
-            Hire Me
+            Hire Me via Linkedin
           </Link>
 
           {/* Mobile Menu Button */}

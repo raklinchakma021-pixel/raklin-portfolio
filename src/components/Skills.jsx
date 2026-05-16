@@ -4,6 +4,7 @@ import {
   Smartphone,
   ArrowUpRight,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function SkillsSection() {
   const skills = [
@@ -12,18 +13,23 @@ export default function SkillsSection() {
       title: "Frontend Development",
       description:
         "Building modern, fast, and scalable web applications using React, Next.js, and TypeScript.",
+        link: "https://www.google.com/search?q=fontend+development"
     },
     {
       icon: <LayoutDashboard className="h-10 w-10" />,
       title: "UI/UX Design",
       description:
         "Designing clean, responsive, and visually attractive interfaces with smooth user experiences.",
+        link: "https://www.google.com/search?q=ui/ux+design"
+
     },
     {
       icon: <Smartphone className="h-10 w-10" />,
       title: "Responsive Design",
       description:
         "Creating fully responsive websites that work beautifully across desktop, tablet, and mobile devices.",
+        link: "https://www.google.com/search?q=responsive+design"
+
     },
   ];
 
@@ -80,10 +86,16 @@ export default function SkillsSection() {
               </p>
 
               {/* Learn More */}
-              <button className="mt-6 inline-flex items-center text-sm font-semibold text-violet-500 transition hover:gap-3">
-                Learn More
-                <ArrowUpRight className="ml-2 h-4 w-4" />
-              </button>
+           <Link
+  href={skill.link}
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <button className="mt-6 inline-flex items-center text-sm font-semibold text-violet-500 transition hover:gap-3">
+    Learn More
+    <ArrowUpRight className="ml-2 h-4 w-4" />
+  </button>
+</Link>
             </div>
           ))}
         </div>

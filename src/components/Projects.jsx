@@ -10,45 +10,38 @@ export default function ProjectsSection() {
 
   const projects = [
     {
-      title: "Portfolio Website",
+      title: "Digital Tools Platform",
       description:
-        "Modern responsive personal portfolio built with Next.js and Tailwind CSS.",
-      image: "/projects/project1.png",
-      github: "https://github.com/your-github-link",
-      live: "https://your-live-link.com",
+        "Modern digitools platform with vanilla js, html and css.",
+      image: "/digitools.png",
+      github: "https://github.com/raklinchakma021-pixel/digitools-platform-project",
+      live: "https://digitoolsplatformbyraklin.netlify.app/",
     },
     {
-      title: "E-Commerce App",
+      title: "Keen Keeper App",
       description:
-        "Full responsive ecommerce frontend with cart and authentication UI.",
-      image: "/projects/project2.png",
-      github: "https://github.com/your-github-link",
-      live: "https://your-live-link.com",
+        "An app with React and Tailwind CSS.",
+      image: "/keenkeeper.png",
+      github: "https://github.com/raklinchakma021-pixel/B13-A7-keen-keeper",
+      live: "https://keenkeeperbyraklin.netlify.app/",
     },
     {
-      title: "Learning Platform",
+      title: "Github Issues Tracker",
       description:
-        "Online learning platform with courses, dashboard, and animations.",
-      image: "/projects/project3.png",
-      github: "https://github.com/your-github-link",
-      live: "https://your-live-link.com",
+        "VanillaJs, Html and CSS project.",
+      image: "/issuetracker.png",
+      github: "https://github.com/raklinchakma021-pixel/B13-A5-Github-Issue-Tracker",
+      live: "https://github-issues-tracker-by-raklin.netlify.app/",
     },
     {
-      title: "Restaurant Website",
+      title: "Skillsphere App",
       description:
-        "Beautiful restaurant UI design with responsive modern layout.",
-      image: "/projects/project4.png",
-      github: "https://github.com/your-github-link",
-      live: "https://your-live-link.com",
-    },
-    {
-      title: "Blog Platform",
-      description:
-        "Modern blog application with dark mode and responsive design.",
-      image: "/projects/project5.png",
-      github: "https://github.com/your-github-link",
-      live: "https://your-live-link.com",
-    },
+        "Next.js app with moder functionality .",
+      image: "/skillsphereproject.png",
+      github: "https://github.com/raklinchakma021-pixel/skillsphere",
+      live: "https://skillsphere-kohl.vercel.app/",
+    }
+  
   ];
 
   const scroll = (direction) => {
@@ -139,6 +132,15 @@ export default function ProjectsSection() {
                 <div className="mt-6 flex items-center gap-4">
                   
                   
+
+                  <Link
+                    href={project.github}
+                    target="_blank"
+                    className="inline-flex items-center gap-2 rounded-full bg-violet-600 px-5 py-2 text-sm font-semibold text-white transition hover:bg-violet-700"
+                  >
+                    <ExternalLink className="h-4 w-4" />
+                    Github
+                  </Link>
 
                   <Link
                     href={project.live}
