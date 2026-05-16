@@ -11,6 +11,7 @@ import ContactSection from "@/components/Contact";
 import Footer from "@/components/Footer";
 import SmoothScroll from "@/components/SmoothScroll";
 import FadeIn from "@/components/FadeIn";
+import ThanksPopup from "@/components/ThanksPopup";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,6 +35,7 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <ThanksPopup/>
         <SmoothScroll >
 <Navbar/>
 <FadeIn>
