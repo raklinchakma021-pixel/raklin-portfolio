@@ -10,6 +10,7 @@ import ProjectsSection from "@/components/Projects";
 import ContactSection from "@/components/Contact";
 import Footer from "@/components/Footer";
 import SmoothScroll from "@/components/SmoothScroll";
+import FadeIn from "@/components/FadeIn";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,13 +36,34 @@ export default function RootLayout({ children }) {
       <body className="min-h-full flex flex-col">
         <SmoothScroll >
 <Navbar/>
+<FadeIn>
         <Banner/>
-        <AboutMe/>
-        <TechStacks/>
-        <SkillsSection/>
-        <QualificationSection/>
-        <ProjectsSection/>
-        <ContactSection/>
+  
+</FadeIn>
+       
+
+          <FadeIn delay={0.1}>
+            <AboutMe />
+          </FadeIn>
+
+          <FadeIn delay={0.2}>
+            <TechStacks />
+          </FadeIn>
+
+          <FadeIn delay={0.3}>
+            <SkillsSection />
+          </FadeIn>
+                <FadeIn delay={0.4}>
+            <QualificationSection />
+          </FadeIn>
+
+          <FadeIn delay={0.5}>
+            <ProjectsSection />
+          </FadeIn>
+
+          <FadeIn delay={0.6}>
+            <ContactSection />
+          </FadeIn>
         <Footer/>
         {children}
 
